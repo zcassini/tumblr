@@ -1,0 +1,5 @@
+h1 class='title' = @post.title
+p class='date'
+  | Submitted #{time_ago_in_words(@post.created_at)} ago
+p class='body'
+  = @post.body
